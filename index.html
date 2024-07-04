@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Breeds Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero">
+        <h1>Cat Breeds Quiz</h1>
+        <p>Test your knowledge about short hair cat breeds!</p>
+        <button id="start-quiz">Start Quiz</button>
+    </section>
+    <div class="quiz-container" id="quiz-container" style="display:none;">
+        <div id="auth">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <button id="login-btn">Login</button>
+        </div>
+        <form id="quiz-form" style="display:none;">
+            <div class="question" id="question1">
+                <p>Is the Siamese breed a short hair?</p>
+                <label><input type="radio" name="q1" value="yes"> Yes</label>
+                <label><input type="radio" name="q1" value="no"> No</label>
+            </div>
+            <div class="question" id="question2">
+                <p>Is the Maine Coon breed a short hair?</p>
+                <label><input type="radio" name="q2" value="yes"> Yes</label>
+                <label><input type="radio" name="q2" value="no"> No</label>
+            </div>
+            <div class="question" id="question3">
+                <p>Is the British Shorthair breed a short hair?</p>
+                <label><input type="radio" name="q3" value="yes"> Yes</label>
+                <label><input type="radio" name="q3" value="no"> No</label>
+            </div>
+            <div class="question" id="question4">
+                <p>Is the Persian breed a short hair?</p>
+                <label><input type="radio" name="q4" value="yes"> Yes</label>
+                <label><input type="radio" name="q4" value="no"> No</label>
+            </div>
+            <div class="question" id="question5">
+                <p>Is the Sphynx breed a short hair?</p>
+                <label><input type="radio" name="q5" value="yes"> Yes</label>
+                <label><input type="radio" name="q5" value="no"> No</label>
+            </div>
+            <button type="button" id="submit-btn">Submit</button>
+        </form>
+        <div id="result" style="display:none;"></div>
+        <div id="progress-bar"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
